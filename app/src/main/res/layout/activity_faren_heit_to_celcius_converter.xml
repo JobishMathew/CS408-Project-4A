@@ -35,7 +35,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMilestoKiloMeter2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMilestoKiloMeter2" tools:targetApi="o" />
 
     <EditText
         android:id="@+id/txtCelcius"
@@ -45,12 +45,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Enter Celcius"
+        android:hint="@string/enter_celcius"
         android:importantForAutofill="no"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFarenheit" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFarenheit" tools:targetApi="o"/>
 
     <Button
         android:id="@+id/btnCalculate"
@@ -59,7 +59,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Calculate"
+        android:onClick="onclickButton"
+        android:text="@string/calculate_Degree"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
